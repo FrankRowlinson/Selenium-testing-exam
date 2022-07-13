@@ -1,2 +1,2 @@
-# Selenium-testing-exam
-Final project on selenium testing course. Done by me ofc :^)
+# Selenium Testing Final Project ✨
+This repo created to store my final project on selenium testing course. Check it out :^)
