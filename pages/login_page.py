@@ -1,4 +1,3 @@
-from distutils.log import Log
 from .base_page import BasePage
 from .locators import LoginPageLocators
 
