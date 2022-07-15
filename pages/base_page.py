@@ -14,6 +14,11 @@ class BasePage:
     def open(self):
         self.browser.get(self.url)
 
+    def go_to_basket_page(self):
+        basket_button = self.browser.find_element(*BasePageLocators.GO_TO_BASKET_BUTTON)
+        basket_button.click()
+        assert "basket" in self.browser.current_url, "We are not on basket page, but should be"
+
     def go_to_login_page(self):
         login_link = self.browser.find_element(*BasePageLocators.LOGIN_LINK)
         login_link.click()
@@ -62,6 +67,4 @@ class BasePage:
             alert.accept()
         except NoAlertPresentException:
             print("No second alert presented")
-
-
-    
+   
