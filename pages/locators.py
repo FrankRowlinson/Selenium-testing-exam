@@ -1,6 +1,10 @@
 from selenium.webdriver.common.by import By
 
 
+class BasePageLocators:
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+
 class MainPageLocators:
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
 
@@ -17,7 +21,7 @@ class LoginPageLocators:
 class ProductPageLocators:
     ADD_TO_BASKET_BUTTON = (By.CLASS_NAME, "btn-add-to-basket")
     PRODUCT_PRICE = (By.CSS_SELECTOR, "div.product_main p.price_color")
-    
+
     SUCCESS_MESSAGE = (By.CSS_SELECTOR, "div#messages div:nth-child(1)")
     # should check with .endswith(), cause text contains jibberish
     PRODUCT_TITLE = (By.CSS_SELECTOR, "div.product_main h1")
