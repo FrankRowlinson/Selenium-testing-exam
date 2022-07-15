@@ -17,4 +17,11 @@ class ProductPage(BasePage):
             self.browser.find_element(*ProductPageLocators.ADDED_PRODUCT_TITLE).text, \
                 "Added product does not match product on page"
 
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), \
+            "Success message is present, but should not be"
+
+    def should_dissapear_message(self):
+        assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE), \
+            "Success message should've dissapeared, but it didn't"
 
