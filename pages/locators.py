@@ -32,7 +32,6 @@ class ProductPageLocators:
     PRODUCT_PRICE = (By.CSS_SELECTOR, "div.product_main p.price_color")
 
     SUCCESS_MESSAGE = (By.CSS_SELECTOR, "div#messages div:nth-child(1)")
-    # should check with .endswith(), cause text contains jibberish
     PRODUCT_TITLE = (By.CSS_SELECTOR, "div.product_main h1")
     ADDED_PRODUCT_TITLE = (By.CSS_SELECTOR, "#messages div:nth-child(1) strong")
     BASKET_TOTAL = (By.CSS_SELECTOR, "#messages div:nth-child(3) strong")
